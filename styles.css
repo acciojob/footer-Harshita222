@@ -1,1 +1,106 @@
 /* your code here */
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+/* Container for the content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top section containing logo and social media icons */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/* Logo details */
+.logo-details {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Media icons */
+.media-icons {
+  display: flex;
+}
+
+.media-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* Link boxes for different sections */
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.link-box {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.link-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.link-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Bottom section containing contact details */
+.bottom-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-number {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-number a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+
+  .link-boxes {
+    flex-direction: column;
+  }
+
+  .link-box {
+    margin: 10px 0;
+  }
+}
